@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{F53B0C7B-E4CA-4292-AE8E-26B7B20DF844}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MyMoney.Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\SqlLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Account.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\AccountManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\BaseManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\DataBaseExtensionMethods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Data\" />
+  </ItemGroup>
+</Project>
