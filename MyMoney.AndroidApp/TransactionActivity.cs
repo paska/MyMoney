@@ -25,6 +25,8 @@ namespace MyMoney.AndroidApp
 		{
 			base.OnCreate (bundle);
 
+			SetContentView (Resource.Layout.Transaction);
+
 			accountId = Intent.GetIntExtra ("AccountId", 0);
 
 			// todo: find out why every FindViewById returns null!!! :(
