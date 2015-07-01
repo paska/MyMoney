@@ -47,6 +47,9 @@ namespace MyMoney.AndroidApp
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
 			
+			// aapt resource value: 0x7f020001
+			public const int monoandroidsplash = 2130837505;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -60,8 +63,17 @@ namespace MyMoney.AndroidApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int myButton = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int accountList = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int ammount = 2131099649;
+			
+			// aapt resource value: 0x7f060003
+			public const int btnCancel = 2131099651;
+			
+			// aapt resource value: 0x7f060002
+			public const int btnSave = 2131099650;
 			
 			static Id()
 			{
@@ -78,6 +90,9 @@ namespace MyMoney.AndroidApp
 			
 			// aapt resource value: 0x7f030000
 			public const int Main = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Transaction = 2130903041;
 			
 			static Layout()
 			{
@@ -104,6 +119,22 @@ namespace MyMoney.AndroidApp
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int Mono_Android_Theme_Splash = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

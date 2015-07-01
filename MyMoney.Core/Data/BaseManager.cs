@@ -6,7 +6,7 @@ using System.IO;
 
 namespace MyMoney.Core.Data
 {
-	public abstract class BaseManager<TEntity,TManager> : IDisposable
+	public class BaseManager<TEntity> : IDisposable
 		where TEntity : new()
 	{
 		protected SQLiteConnection database;
@@ -28,6 +28,11 @@ namespace MyMoney.Core.Data
 		public List<TEntity> GetAll()
 		{
 			return this.database.Table<TEntity>().ToList ();
+		}
+
+		public TEntity Get(int id)
+		{
+			return this.database.Get<TEntity> (id);
 		}
 
 		public void Insert(TEntity entity)
